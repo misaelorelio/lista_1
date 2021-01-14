@@ -9,5 +9,5 @@ main(){
 	homem = (72.7 * altura1) - 58;
 	mulher = (62.1 * altura2) - 44.7;
 	
-	printf("O peso ideal homem: %.2f\tmulher: %.2f\n", homem, mulher);
+	printf("O peso ideal do homem: %.2f\tmulher: %.2f\n", homem, mulher);
 }
