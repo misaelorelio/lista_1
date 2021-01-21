@@ -7,8 +7,8 @@ main (){
 	printf("Quantidade de latas: %.2f\n", gasto);
 	total = gasto * 80;
 	printf("Gastos totais com tinta: R$ %.3f", total);
-	printf("Latas 18 litros: %.2f", gasto)
-	printf("Latas 18 litros: %.2f", gasto)
+	printf("Latas 18 litros: %.2f", gasto);
+	printf("Latas 18 litros: %.2f", gasto);
 
 
 
