@@ -1,17 +1,15 @@
 #include<stdio.h>
 main (){
-	char sexo;
+	char sexo ='F'; 
 	printf("informe o sexo da pessoa: ");
 	scanf("%c", &sexo);
-	/*printf("Para feminino inserir F: ");
-	scanf("%c", &f);*/
-	sexo = 'f';
-	sexo = 'm';
-	if( sexo ='m'){
-		printf("sexo masculino");
-	}else (sexo ='f'){
-		printf("sexo feminino");
-	}else if {
+	
+		/*printf("Masculino: %c Feminino: %c\n", sexo, sexoo);*/
+	if(sexo != 'f' && sexo != 'm'){
 		printf("invalido");
+	}if(sexo == 'm'){
+		printf("Sexo Masculino");
+	}else if(sexo == 'f'){
+		printf("Sexo Feminino");
 	}
 }
