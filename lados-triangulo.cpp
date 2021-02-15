@@ -10,28 +10,19 @@ main (){
 	printf("Lado 3: ");
 	scanf("%f", &lado3);
 	
-	if(lado1 > lado2 && lado1 > lado3 && lado2 > lado3){
+	if(lado1 != lado2 && lado1 == lado3 && lado2 != lado3){
 		printf("triangulo isosceles");
 	}
-	else if(lado2 > lado1 && lado2 > lado3 && lado1 > lado3){
+	else if(lado2 != lado1 && lado2 != lado3 && lado1 == lado3){
 		printf("triangulo isosceles");
 	}
-	else if(lado3 > lado1 && lado2 > lado1 && lado3 > lado2){
+	else if(lado3 != lado2 && lado3 == lado1 && lado2 != lado1){
 		printf("triangulo isosceles");
 	}
-	else if(lado1 < lado3 && lado1 > lado2 && lado3 > lado2){
+	else if(lado3 != lado2 && lado3 != lado1 && lado2 == lado1){
 		printf("triangulo isosceles");
 	}
-	else if(lado1 < lado2 && lado1 < lado3 && lado3 < lado2){
-		printf("triangulo isosceles");
-	}
-	else if(lado2 < lado1 && lado2 < lado3 && lado1 < lado3){
-		printf("triangulo isosceles");
-	}
-	else if(lado3 < lado1 && lado3 < lado2 && lado1 < lado2){
-		printf("triangulo isosceles");
-	}
-	else if(lado2 < lado3  && lado2 < lado1 && lado1 < lado3){
+	else if(lado3 == lado2 && lado3 != lado1 && lado2 != lado1){
 		printf("triangulo isosceles");
 	}
 	
