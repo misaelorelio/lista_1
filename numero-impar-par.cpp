@@ -1,4 +1,4 @@
-#incluide<stdio.h >
+#include<stdio.h >
 main () {
 	int resultado, numero1;
 	printf("Informe um numero: ");

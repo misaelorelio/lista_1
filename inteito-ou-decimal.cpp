@@ -1,17 +1,19 @@
 #include<stdio.h>
-main()
-{
-      float numero;
-      int auxiliar;
-      printf("Informe um numero\n");
-      scanf("%f, &numero");
-      auxiliar=numero;
-      
-	  if(auxiliar==numero){
-      	printf("O numero e inteiro\n");
-	  }
-           
-      else {
-      	 printf("O numero e decimal\n");
-	  }
+#include<math.h>
+main(){
+    
+	float num;
+	int aux;
+
+	printf("Informe um numero: ");
+	scanf ("%f", &num);
+	
+	aux = num;
+	
+	if(aux == num ) {
+		printf ("Esse numero e inteiro ");
+	}
+	else {
+		printf ("Esse numero e decimal");
+	}
 }
