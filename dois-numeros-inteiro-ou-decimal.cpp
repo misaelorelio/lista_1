@@ -4,7 +4,7 @@ main(){
     
 	float num1, num2;
 	float soma, multiplicacao, divisao, subtracao;
-	int aux;
+	int aux, decimal;
 
 
 	printf("Informe um numero: ");
@@ -16,14 +16,40 @@ main(){
 	
 	soma = num1 + num2;
 	aux = soma;
+	decimal = aux% 2;
+	
+	multiplicacao = num1 * num2;
+	aux = multiplicacao;
+	decimal = aux% 2;
+	
+	divisao = num1 / num2;
+	aux = divisao;
+	decimal = aux% 2; 
+	
+	subtracao = num1 - num2;
+	aux = subtracao;
+	decimal = aux% 2;
+	
+//	printf("calculo: %.2f\n %.2f\n %.2f\n %.2f\n", soma, multiplicacao, divisao, subtracao);
 	
 	
-	if(soma == aux ) {
-		printf ("Esse numero e inteiro %.2f ", soma);
-			printf ("Esse numero e par %.2f\n ", soma);
+		if(aux == soma || aux == multiplicacao || aux == divisao || aux == subtracao) {
+			printf ("Esse numero e inteiro\n");
 	}
-	else {
-		printf ("Esse numero e decimal");
-		printf ("Esse numero e impar\n");
+		else {
+			printf ("Decimal\n");
 	}
+		if(decimal == 0){
+			printf("Esse numero e par\n ");
+		}
+		else {
+			printf ("Impar\n");
+	}	
+		if(soma < 0 || multiplicacao < 0 || divisao < 0 || subtracao < 0) {
+			printf ("Esse numero e negativo\n");
+	}
+		else {
+			printf ("Positivo");
+	}
+
 }
