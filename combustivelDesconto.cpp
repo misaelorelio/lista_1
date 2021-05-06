@@ -1,36 +1,28 @@
 #include<stdio.h >
 main () {
-	int resposta1, resposta2, resposta3, resposta4, resposta5, soma;
-	char A, B;
+	float tipo, quantidade1;
+	float alcool, valor, quantidade, desconto1, desconto2, bomba1, total1, total2;
+	
 	printf("Quantos litros de combustivel? ");
-	scanf ("%i", &resposta1);
+	scanf ("%f", &quantidade);
 	
 	printf("Alccol ou gasolina? ");
-	scanf ("%c", &A);
-	
-	printf("Mora perto da vítima? (sim 1) ou (nao 0)");
-	scanf ("%i", &resposta3);
-	
-	printf("Devia para a vítima? (sim 1) ou (nao 0)");
-	scanf ("%i", &resposta4);
-	
-	printf("Já trabalhou com a vítima? (sim 1) ou (nao 0)");
-	scanf ("%i", &resposta5);
-	
-	soma = resposta1 + resposta2 + resposta3 + resposta4 + resposta5;
+	scanf ("%f", &alcool);
 	
 	
+	desconto1 = (quantidade * 0.03);
+	desconto2 = (quantidade * 0.05);
+	valor = (quantidade * 1.90) ;
+	total1 = valor - desconto1;
+	total2 = valor - desconto2;
+	alcool = quantidade;
 	
-	if(soma == 2){	
-		printf("Pessoa suspeita\n");
+	if(alcool <= 20){
+		printf("Valor de desconto: %.2f\n ",desconto1);
+		printf("Valor de desconto:%.2f\n",total1);
 	}
-	else if(soma == 3 || soma == 4){
-		printf("Cumplice do assassinato\n");
-	}
-	else if(soma == 5){
-		printf("Assassino\n");
-	}
-	else{
-		printf("Inocente");
+	else if(alcool > 20){
+		printf("Valor de desconto: %.2f ",desconto2);
+		printf("Total R$:%.2f ",total2);
 	}
 }
