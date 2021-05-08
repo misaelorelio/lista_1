@@ -1,11 +1,12 @@
 #include<stdio.h >
 main () {
-	float tipo, kgCarne, desconto, maca, precoTotal;
-	printf("Quantos quilos de fruta? ");
-	scanf ("%f", &kg);
+	float  kgCarne, desconto, pagar, precoTotal;
+	int tipo;
+	printf("Qual carne voce vai querer? 1 -File duplo, 2 -Alcatra, 3 -Picanha  ");
+	scanf ("%i", &tipo);
 	
-	printf("Morango - 1 ou Maca - 2 ");
-	scanf ("%f", &frutas);
+	printf("Quantos Kg? ");
+	scanf ("%f", &kgCarne);
 
 	
 
