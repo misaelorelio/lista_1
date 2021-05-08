@@ -77,10 +77,14 @@ main () {
 		precoTotal = kgCarne * 7.8;
 		printf("Preco da sua compra R$ %.2f\n", precoTotal);
 	}
+	//Validações
 	else if(tipo != 1 || tipo != 2 || tipo != 3){
 		printf("Digite um tipo valido");
 	}
 	else if(kgCarne == 0){
 		printf("Digite uma quantidade de kg ");
+	}
+	else if(cartao != 1 || cartao != 0){
+		printf("Digite 1 cartao ou 0 para outro meio de pagamento ");
 	}
 }
