@@ -77,4 +77,7 @@ main () {
 		precoTotal = kgCarne * 7.8;
 		printf("Preco da sua compra R$ %.2f\n", precoTotal);
 	}
+	else if(tipo != 1 || tipo != 2 || tipo != 3){
+		printf("Digite um tipo valido");
+	}
 }
