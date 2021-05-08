@@ -80,4 +80,7 @@ main () {
 	else if(tipo != 1 || tipo != 2 || tipo != 3){
 		printf("Digite um tipo valido");
 	}
+	else if(kgCarne == 0){
+		printf("Digite uma quantidade de kg ");
+	}
 }
