@@ -18,7 +18,8 @@ main () {
 		pagar = precoTotal - desconto;
 		printf("Preco da sua compra R$ %.2f\n", pagar);
 	}
-	else {
-		printf("Informacoes erradas");
+	else if(tipo == 1 && kgCarne <= 5 && cartao == 0) {
+		precoTotal = kgCarne * 4.9;
+		printf("Preco da sua compra R$ %.2f\n", precoTotal);
 	}
 }
