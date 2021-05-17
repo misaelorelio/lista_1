@@ -1,15 +1,15 @@
 #include<stdio.h >
 main () {
 	
-	int nome, senha;
+	
 	char login [10];
-	printf("Informe seu nome: ");
-	scanf ("%i", &nome);
+	char senha [10];
+	printf("Informe seu login: ");
+	scanf ("%s", &login);
 	
 	printf("Informe sua senha: ");
-	scanf ("%i", &senha);
+	scanf ("%s", &senha);
 	
-	printf("Informe %i", nome);
-	printf("Informe %i", senha);
-	printf("Informe %c", login);
+	printf("Informe %s\n", login);
+	printf("Informe %s", senha);
 }
