@@ -2,21 +2,20 @@
 #include <stdlib.h>
 #include<string.h>
 
-main () {		
-	
-	int usernome = strlen(nome);
-	int usersenha = strlen(senha);
-	printf("Informe seu login: ");
-	scanf ("%s", &login);
-	
-	printf("Informe sua senha: ");
-	scanf ("%s", &senha);
-	
-	
-	if("%s", login == "%s", senha){
-		printf("Errado");
-	}
-	else{
-		printf("Certo");
-	}
+
+char * mystrcmp(char * des,char * src){
+
+	char * tem = des;
+	while(*tem) tem++;
+	while(*tem++ = *src++);
+	return des;
+}
+
+
+int main(){
+	char s[30] = "hello";
+	char * s1 = "world";
+//	printf("%s\n",mystrcat(s,s1));
+	printf("%d\n",strcmp(s,s1));
+	return 0;
 }
