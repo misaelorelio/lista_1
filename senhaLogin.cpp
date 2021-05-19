@@ -13,7 +13,7 @@ main () {
 	senha != login;
 	
 	if("%s", login == "%s", senha){
-		printf("Errado:%s%s", login, senha);
+		printf("Errado");
 	}
 	else{
 		printf("Certo");
