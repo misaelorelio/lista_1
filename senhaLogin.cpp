@@ -1,9 +1,11 @@
 #include<stdio.h >
+#include <stdlib.h>
+#include<string.h>
+
 main () {		
 	
-	char login [10];
-	char senha [10];
-	
+	int usernome = strlen(nome);
+	int usersenha = strlen(senha);
 	printf("Informe seu login: ");
 	scanf ("%s", &login);
 	
@@ -11,12 +13,10 @@ main () {
 	scanf ("%s", &senha);
 	
 	
-	printf("teste%s", A);
-	
-/*	if("%s", login == "%s", senha){
+	if("%s", login == "%s", senha){
 		printf("Errado");
 	}
 	else{
 		printf("Certo");
-	}*/
+	}
 }
