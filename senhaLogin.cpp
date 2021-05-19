@@ -10,12 +10,13 @@ main () {
 	printf("Informe sua senha: ");
 	scanf ("%s", &senha);
 	
-	senha != login;
 	
-	if("%s", login == "%s", senha){
+	printf("teste%s", A);
+	
+/*	if("%s", login == "%s", senha){
 		printf("Errado");
 	}
 	else{
 		printf("Certo");
-	}
+	}*/
 }
